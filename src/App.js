@@ -23,27 +23,27 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container" >
-          <div className="jumbotron" style={{'textAlign': 'center'}}>
-            <img src="main_logo.png" height="96"  alt="avinashbhosale.com"></img>
+      <div> 
+     
+          <div className="jumbotron" style={{'textAlign': 'center','margin-top': '66px','background-color':'#f4f1de'}}>
+            {/* <img src="car.png" height="96"  alt="avinashbhosale.com"></img> */}
             <h2>What is your favorite front-end framework in 2018 ? </h2>
             <h4> Click on the logo below to vote!</h4>
             <br />
 
             <div className="row">
 
-              <div className="col-lg-4" >
-                <img src="angular_logo.png" height="96" alt="Angular" onClick={this.handleVoteAngular} ></img>
-              </div>
+                  <div className="col-lg-offset-3 col-lg-4">
+              <img src="angular_logo.png" height="96" alt="Angular" onClick={this.handleVoteAngular}></img>
+            </div>
 
-              <div className="col-lg-4" >
-               <img src="react_logo.png" height="96" alt="React" onClick={this.handleVoteReact} ></img>
-              </div>
+              <div className="col-lg-4">
+              <img src="react_logo.png" height="96" alt="Angular" onClick={this.handleVoteReact}></img>
+            </div>
 
-             <div className="col-lg-4" >
-                <img src="vuejs_logo.png" height="96" alt="Vuejs" onClick={this.handleVoteVuejs} ></img>
-              </div>
-
+            <div className="col-lg-4">
+              <img src="vuejs_logo.png" height="96" alt="Angular" onClick={this.handleVoteVuejs}></img>
+            </div>
               
 
           </div>
